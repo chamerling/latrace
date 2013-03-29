@@ -1,6 +1,16 @@
 # Node.js Client for la-trace.com
 
-@chamerling
+## Usage
+
+Get an API Key from http://la-trace.com and start getting your tracks:
+
+    // get my tracks
+    var key = 'MYKEY';
+    var LaTrace = require('latrace').LaTrace;
+    var client = new LaTrace(key);
+    client.mine(function(err, result) {
+      console.log(result)
+    });
 
 ## License 
 
