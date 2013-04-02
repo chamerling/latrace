@@ -9,11 +9,11 @@ var key = process.env.LA_TRACE_API_KEY;
 var LaTrace = require('../lib/latrace').LaTrace;
 
 var client = new LaTrace(key);
-client.me(function(err, result) {
-  console.log('>>> Me:', result.pseudo);
-  
-  // get all my traces...
-  client.mine(function(err, result) {
-    console.log(result)
-  });
+
+// home ;)
+var options = {lat: '43.4888377', lon: '3.669251000000031'};
+
+client.around(options, function(err, result) {
+  console.log(err);
+  console.log(result);
 });

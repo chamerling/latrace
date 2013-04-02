@@ -12,6 +12,16 @@ Get an API Key from http://la-trace.com and start getting your tracks:
       console.log(result)
     });
 
+### Samples
+
+Check them out in the *samples* folder. Set the LA\_TRACE\_API\_KEY system environment variable for immediate use...
+
+    export LA_TRACE_API_KEY=YOURKEY 
+
+## TODO
+
+- Check response code and type. HTTP status can be 200 for bad requests. Need to check error in response payload...
+
 ## License 
 
 (The MIT License)
